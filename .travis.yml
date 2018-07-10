@@ -1,0 +1,8 @@
+language: java
+sudo: false
+jdk: oraclejdk10
+
+install: true
+script:
+ - mvn clean install
+ - bash <(curl -s https://codecov.io/bash)
